@@ -248,3 +248,74 @@ select {
 }
 
 .task-card.priority-high::before {
+
+/* ===== WorkBoard card UI emergency override ===== */
+
+.task-card {
+  min-height: 86px !important;
+  padding: 14px 16px 12px !important;
+  border-radius: 14px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 9px !important;
+  background: #ffffff !important;
+  border: 1px solid #dbe5ef !important;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08) !important;
+}
+
+.task-card::before {
+  height: 4px !important;
+}
+
+.task-card strong {
+  display: block !important;
+  font-size: 15px !important;
+  line-height: 1.35 !important;
+  padding-top: 5px !important;
+  color: #142033 !important;
+}
+
+.task-card p {
+  margin: 0 !important;
+  font-size: 12px !important;
+  line-height: 1.4 !important;
+  color: #66758a !important;
+}
+
+.card-meta {
+  min-height: 22px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 10px !important;
+  margin-top: 2px !important;
+}
+
+.task-card footer {
+  min-height: 24px !important;
+  margin-top: auto !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 10px !important;
+}
+
+.priority-badge {
+  height: 23px !important;
+  padding: 0 9px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  border-radius: 999px !important;
+  flex-shrink: 0 !important;
+}
+
+.task-column {
+  background: #edf3f8 !important;
+  border-radius: 14px !important;
+  padding-bottom: 8px !important;
+}
+
+.task-stack {
+  gap: 10px !important;
+  padding: 0 10px 10px !important;
+}
