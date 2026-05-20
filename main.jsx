@@ -19,8 +19,13 @@ import {
   Users,
   X,
 } from 'lucide-react';
-import { supabase } from './lib/supabase';
+import { createClient } from '@supabase/supabase-js';
 import './styles.css';
+
+const supabase = createClient(
+  import.meta.env.VITE_SUPABASE_URL || '',
+  import.meta.env.VITE_SUPABASE_ANON_KEY || ''
+);
 
 const STATUSES = [
   { key: 'todo', label: 'To Do' },
